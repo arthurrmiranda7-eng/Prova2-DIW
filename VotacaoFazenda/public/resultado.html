@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação 2026 - Resultado</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="img/logo-fazenda.jpg" alt="Logo A Fazenda" width="65">
+                <span>Votação 2026</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="votacao.html">Votar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="resultado.html">Resultado</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <h1 class="titulo-tema">Parcial da eliminação</h1>
+
+        <p class="fs-5">
+            <strong id="total-votos">0</strong> votos computados
+        </p>
+
+        <div id="mensagem-resultado" class="d-none"></div>
+
+        <div id="placar" class="d-grid gap-3 mt-4"></div>
+
+        <button type="button"
+                class="btn btn-outline-light mt-4"
+                data-bs-toggle="modal"
+                data-bs-target="#modalZerar">
+            Zerar votação
+        </button>
+    </main>
+
+    <div class="modal fade" id="modalZerar" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5">
+                        Confirmar exclusão dos votos
+                    </h2>
+
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    Tem certeza de que deseja apagar todos os votos?
+                    Esta ação não pode ser desfeita.
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                        Cancelar
+                    </button>
+
+                    <button type="button"
+                            class="btn btn-danger"
+                            id="confirmar-zerar">
+                        Sim, zerar votação
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        DIW 2026, PUC Minas
+    </footer>
+
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/resultado.js"></script>
+</body>
+</html>

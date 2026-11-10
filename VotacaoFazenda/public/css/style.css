@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Rye";
+    src: url("../fonts/rye.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/nunito-400.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/nunito-700.woff2") format("woff2");
+    font-weight: 700;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: #f5e5c8;
+    min-height: 100vh;
+    background-color: #4b2d1a;
+    background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 116px, #2e1b10 119px, #2e1b10 122px), repeating-linear-gradient(90deg, transparent 0, transparent 28px, rgba(0, 0, 0, .06) 29px, transparent 30px);
+}
+
+.titulo-tema, .navbar-brand {
+    font-family: "Rye", serif;
+}
+
+.titulo-tema {
+    color: #f2cb77;
+}
+
+.navbar {
+    background-color: #36200f !important;
+    border-bottom: 4px solid #89613e;
+}
+
+.navbar-brand {
+    color: #f3c76a;
+}
+
+.navbar-brand:hover {
+    color: #f3c76a;
+}
+
+.navbar .nav-link.active {
+    background: #f3cb74;
+    border-radius: 8px;
+    color: #241407;
+    font-weight: 700;
+}
+
+.fazendeiro-foto {
+    width: 330px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 10px solid #9a6635;
+}
+
+.etiqueta-fazendeiro {
+    display: inline-block;
+    color: #1f170a;
+    background: #f0ca70;
+    padding: 6px 15px;
+    border-radius: 5px;
+    transform: rotate(-2deg);
+    margin-top: -5px;
+    position: relative;
+}
+
+.card-boas-vindas {
+    background-color: #f5e6c5;
+    color: #2b1a0e;
+    border-radius: 16px;
+}
+
+.card-boas-vindas .titulo-tema {
+    color: #251508;
+}
+
+.btn-danger {
+    background-color: #ba3029;
+    border-color: #ba3029;
+}
+
+.btn-danger:hover {
+    background-color: #9f2620;
+    border-color: #9f2620;
+}
+
+.participante-roca {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #371b0d;
+    border: 2px solid #ad3926;
+    border-radius: 30px;
+    padding: 3px 12px 3px 4px;
+}
+
+.foto-roca {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e8a83d;
+}
+
+.nome-roca {
+    color: #f5dfbc;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+footer {
+    color: #d5aa76;
+}
